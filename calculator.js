@@ -14,7 +14,7 @@ function element (set) {
     //文字列の横に小数点がこないように
     }else {
         checkNum =isNaN(disVal.value.slice(-1));
-        if((checkNum =="true") && (set ==".")){
+        if((checkNum ==true) && (set ==".")){
             return;
         }else {
         disVal.value += set;
@@ -29,7 +29,7 @@ function calc(set) {
     //連続した演算子の禁止
     }else {
         checkNum =isNaN(disVal.value.slice(-1));
-        if(checkNum =="true"){
+        if(checkNum ==true){
         return;
         }else {
             disVal.value += set;
